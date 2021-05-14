@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec243cf-0e5f-4aad-a36a-cb76896b8b9d" name="Default Changelist" comment="" />
+    <list default="true" id="fec243cf-0e5f-4aad-a36a-cb76896b8b9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/telegrambot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/telegrambot.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +34,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TelegrambotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="telegrambot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.dulex.telegrambot.TelegrambotApplication" />
