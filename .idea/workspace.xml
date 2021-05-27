@@ -23,12 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fec243cf-0e5f-4aad-a36a-cb76896b8b9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/bot/SATelegramBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/AbstractCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/CommandContainerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/HelpCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/NoCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/SendBotMessageServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/StartCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/StopCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/dulex/telegrambot/UnknownCommandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/TelegrambotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/TelegrambotApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegrambot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/telegrambot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/NoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/NoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/StopCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/StopCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/UnknownCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/dulex/telegrambot/command/UnknownCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -67,20 +76,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Spring Boot.TelegrambotApplication">
-    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.dulex.telegrambot.A" />
-      <module name="telegrambot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.dulex.telegrambot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AbstractCommandTest.shouldProperlyExecuteCommand">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -88,6 +84,85 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbstractCommandTest.shouldProperlyExecuteCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telegrambot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dulex.telegrambot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dulex.telegrambot" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dulex.telegrambot.AbstractCommandTest" />
+      <option name="METHOD_NAME" value="shouldProperlyExecuteCommand" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telegrambot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dulex.telegrambot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dulex.telegrambot" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dulex.telegrambot.CommandContainerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandContainerTest.shouldGetAllExistingCommands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telegrambot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dulex.telegrambot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dulex.telegrambot" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dulex.telegrambot.CommandContainerTest" />
+      <option name="METHOD_NAME" value="shouldGetAllExistingCommands" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandContainerTest.shouldReturnUnknownCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telegrambot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dulex.telegrambot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dulex.telegrambot" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dulex.telegrambot.CommandContainerTest" />
+      <option name="METHOD_NAME" value="shouldReturnUnknownCommand" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendBotMessageServiceTest.shouldProperlySendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="telegrambot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.dulex.telegrambot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.dulex.telegrambot" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dulex.telegrambot.SendBotMessageServiceTest" />
+      <option name="METHOD_NAME" value="shouldProperlySendMessage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.A" />
+        <item itemvalue="JUnit.AbstractCommandTest.shouldProperlyExecuteCommand" />
+        <item itemvalue="JUnit.CommandContainerTest.shouldReturnUnknownCommand" />
+        <item itemvalue="JUnit.CommandContainerTest" />
+        <item itemvalue="JUnit.CommandContainerTest.shouldGetAllExistingCommands" />
+        <item itemvalue="JUnit.SendBotMessageServiceTest.shouldProperlySendMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +193,10 @@
       <option name="presentableId" value="Default" />
       <updated>1621015589249</updated>
       <workItem from="1621015591005" duration="461000" />
+      <workItem from="1621258330855" duration="12147000" />
+      <workItem from="1621344186618" duration="2269000" />
+      <workItem from="1621358724982" duration="980000" />
+      <workItem from="1622148575767" duration="1577000" />
     </task>
     <servers />
   </component>
@@ -130,51 +213,60 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1621021333328">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1622150257806">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1621021333328" />
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom" timestamp="1621022073311">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622150257806" />
+    <state x="550" y="281" width="435" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1622150003230">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.0.center" timestamp="1621022073311">
+    <state x="550" y="281" width="435" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1622150003230" />
+    <state width="1478" height="208" key="GridCell.Tab.0.bottom" timestamp="1621348958046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.0.left" timestamp="1621022073311">
+    <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621348958046" />
+    <state width="1478" height="208" key="GridCell.Tab.0.center" timestamp="1621348958046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.0.right" timestamp="1621022073311">
+    <state width="1478" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621348958046" />
+    <state width="1478" height="208" key="GridCell.Tab.0.left" timestamp="1621348958045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.1.bottom" timestamp="1621022073311">
+    <state width="1478" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621348958045" />
+    <state width="1478" height="208" key="GridCell.Tab.0.right" timestamp="1621348958046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.1.center" timestamp="1621022073311">
+    <state width="1478" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621348958046" />
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1621282899138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.1.left" timestamp="1621022073311">
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621282899138" />
+    <state width="1478" height="258" key="GridCell.Tab.1.center" timestamp="1621282899138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
-    <state width="1478" height="208" key="GridCell.Tab.1.right" timestamp="1621022073311">
+    <state width="1478" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1621282899138" />
+    <state width="1478" height="258" key="GridCell.Tab.1.left" timestamp="1621282899138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="208" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1621022073311" />
+    <state width="1478" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1621282899138" />
+    <state width="1478" height="258" key="GridCell.Tab.1.right" timestamp="1621282899138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1621282899138" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621020121933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621020121933" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1621021556726">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1621266149668">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1621021556726" />
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1621266149668" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1621276577357">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1621276577357" />
   </component>
 </project>
