@@ -12,7 +12,7 @@ public class HelpCommand implements Command {
 
     private final SendBotMessageService sendBotMessageService;
 
-    private static final String HELP_MESSAGE = String.format("✨<b>Доступні команди</b>✨\n\n"
+    public static final String HELP_MESSAGE = String.format("✨<b>Доступні команди</b>✨\n\n"
                     + "<b>Почати \\ работу з ботом</b>\n"
                     + "%s - почати работу зі мною\n"
                     + "%s - зупинти роботу зі мною\n\n"

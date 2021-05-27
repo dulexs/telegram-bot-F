@@ -10,7 +10,7 @@ public class UnknownCommand implements Command {
 
     private final SendBotMessageService sendBotMessageService;
 
-    private static final String UNKNOWN_MESSAGE = "Не розумію Вас \uD83D\uDE1F, напишіть /help щоб взнати що я розумію.";
+    public static final String UNKNOWN_MESSAGE = "Не розумію Вас \uD83D\uDE1F, напишіть /help щоб взнати що я розумію.";
 
     public UnknownCommand(
             SendBotMessageService sendBotMessageService
